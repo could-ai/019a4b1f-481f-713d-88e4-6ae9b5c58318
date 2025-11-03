@@ -1,3 +1,6 @@
+import 'package:couldai_user_app/screens/ai_chat_screen.dart';
+import 'package:couldai_user_app/screens/crisis_support_screen.dart';
+import 'package:couldai_user_app/screens/learning_hub_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -22,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               title: "Talk to Me",
               description: "AI Emotional Support Bot for Individuals",
               onTap: () {
-                // Navigate to AI Chat
+                Navigator.pushNamed(context, AiChatScreen.routeName);
               },
             ),
             const SizedBox(height: 20),
@@ -32,7 +35,7 @@ class HomeScreen extends StatelessWidget {
               title: "Learn Together",
               description: "Learning & Engagement Hub",
               onTap: () {
-                // Navigate to Learning Hub
+                Navigator.pushNamed(context, LearningHubScreen.routeName);
               },
             ),
             const SizedBox(height: 20),
@@ -42,7 +45,7 @@ class HomeScreen extends StatelessWidget {
               title: "Find Help",
               description: "Crisis Support & Local Linkages",
               onTap: () {
-                // Navigate to Crisis Support
+                Navigator.pushNamed(context, CrisisSupportScreen.routeName);
               },
             ),
           ],
